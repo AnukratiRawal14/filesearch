@@ -1,21 +1,15 @@
-.App {
-  text-align: center;
+.mainBody{
+  background: url("./images/isto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  background: url("./images/header-small.jpg");
+  min-height: 28vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,9 +17,178 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+/*Search Bar*/
 
-.App-link {
-  color: #61dafb;
+.searchBox{
+  margin-left: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%,-50%);
+
+}
+
+
+.search_box{
+	background: #496888;
+	position: relative;
+	padding: 15px;
+	border-radius: 50px;
+  display: flex;
+}
+
+
+.search_box .search_btn{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #0c3a6b;
+  opacity: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.search_box .input_search{
+	outline: none;
+	border: 0;
+	background: #0c3a6b;
+	border-radius: 50px;
+	padding: 15px 20px;
+	width: 450px; 
+	height: 50px;
+	color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+:-ms-input-placeholder {
+  color: #fff;
+}
+
+
+
+
+/* Uplaod Button */
+
+.upload_box{
+  width:500px;
+  height: 70px;
+  background-color: #496888;
+  margin-left: 40px;
+  padding: 12px;
+  border-radius:60px;
+}
+
+input[type="file"]{
+  display: none;
+  background-color: #dddddd;
+  margin: 90%;
+}
+.image{
+  margin-right:10px;
+}
+label{
+  color :white;
+  height:48px;
+  border-radius: 40px;
+  width:180px;
+  background-color: #0c3a6b;
+  padding-top:12px;
+  padding-left:30px;
+  font-size: 1em;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  
+}
+
+/*table*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.header_fixed {
+  max-height: 100vh;
+  width: 80%;
+  margin-left: 140px;
+  overflow: auto;
+  
+}
+
+.header_fixed thead th {
+  position: sticky;
+  top: 0;
+  background-color:#0c3a6b;
+  color: #e6e7e8;
+  font-size: 15px;
+}
+
+th,
+td {
+  border-bottom: 1px solid #dddddd;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+td img {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  border: 5px solid #e6e7e8;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tr:hover td {
+  color: #496888;
+  cursor: pointer;
+  background-color: #e6e7e8;
+}
+
+td button {
+  border: none;
+  padding: 7px 20px;
+  border-radius: 20px;
+  background-color: #0c3a6b;
+  color: #e6e7e8;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 @keyframes App-logo-spin {
